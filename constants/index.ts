@@ -62,24 +62,42 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-    {
-      skill_name: "Next.js",
-      image: "next.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Docker",
-      image: "docker.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "C++",
-      image: "cpp.png",
-      width: 80,
-      height: 80,
-    },
+  {
+    skill_name: "Next.js",
+    image: "next.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Express.js",
+    image: "express.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Postman",
+    image: "postman.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "VS Code",
+    image: "vscode.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "C++",
+    image: "cpp.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Java",
+    image: "java.png",
+    width: 80,
+    height: 80,
+  },
 ] as const;
 
 export const SOCIALS = [
@@ -91,7 +109,7 @@ export const SOCIALS = [
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://linkedin.com/in/dhruvesh-shyara",
+    link: "https://linkedin.com/in/dhruveshshyara",
   },
   {
     name: "Instagram",
@@ -126,6 +144,12 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
+    skill_name: "Next.js",
+    image: "next.png",
+    width: 80,
+    height: 80,
+  },
+  {
     skill_name: "Figma",
     image: "figma.png",
     width: 50,
@@ -151,6 +175,12 @@ export const BACKEND_SKILL = [
     image: "mongodb.png",
     width: 40,
     height: 40,
+  },
+  {
+    skill_name: "REST APIs",
+    image: "restapi.png",
+    width: 80,
+    height: 80,
   },
 ] as const;
 
@@ -179,6 +209,12 @@ export const FULLSTACK_SKILL = [
     width: 80,
     height: 80,
   },
+  {
+    skill_name: "Next.js",
+    image: "next.png",
+    width: 80,
+    height: 80,
+  },
 ] as const;
 
 export const OTHER_SKILL = [
@@ -189,14 +225,32 @@ export const OTHER_SKILL = [
     height: 80,
   },
   {
+    skill_name: "Github",
+    image: "github.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Postman",
+    image: "postman.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "VS Code",
+    image: "vscode.png",
+    width: 80,
+    height: 80,
+  },
+  {
     skill_name: "C++",
     image: "cpp.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Github",
-    image: "github.png",
+    skill_name: "Java",
+    image: "java.png",
     width: 80,
     height: 80,
   },
@@ -204,13 +258,31 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Shyara Gold",
+    title: "Yaritu - Luxury Wedding Outfits on Rent",
     description:
-      'A full-stack e-commerce application built with React, Node.js, Express, MongoDB, and Redux. Features include user authentication, product catalog, shopping cart, and admin dashboard.',
+      "Developed a rental catalogue using Next.js 15 (App Router) and MongoDB/Mongoose, with a custom dashboard using Next-Auth and Sanity CMS for inventory management. Optimized with AWS S3 and Cloudinary.",
+    image: "/projects/yaritu.png",
+    link: "https://yaritu.com/",
+    github: "https://github.com/Dhruvesh1611/yaritu",
+    technologies: ["Next.js", "React", "MongoDB", "AWS S3", "Cloudinary", "Next-Auth", "Sanity CMS", "Framer Motion"],
+  },
+  {
+    title: "Shyara Gold - Your Style, Your Statement.",
+    description:
+      "Engineered a high-performance jewelry e-commerce platform using React and Node.js, with a REST API using Express and MongoDB Atlas. Integrated Cloudinary and Multer for media management.",
     image: "/projects/shyaragold.png",
     link: "https://shyara-gold.netlify.app/",
     github: "https://github.com/codinggita/shyara_gold",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Cloudinary", "Framer Motion", "Axios"],
+  },
+  {
+    title: "Tattoo Studio - Open Source Contribution",
+    description:
+      "Architected a tiered membership program with a loyalty & rewards system using React and Node.js. Developed a secure JWT-authenticated digital wallet for tracking reward points.",
+    image: "/projects/tattoostudio.png",
+    link: "https://tattoostudio.com/",
+    github: "https://github.com/Dhruvesh1611/tattoo-studio",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Mongoose"],
   },
   {
     title: "EatClub Clone",
@@ -249,9 +321,27 @@ export const PROJECTS = [
     technologies: ["JavaScript", "HTML5 Canvas", "CSS3", "Game Development"],
   },
   {
-    title: "DocScanX",
+    title: "UI/UX Design - Yaritu",
     description:
-      'A UI/UX design project for a document scanning application. Features include modern interface design, user experience optimization, and responsive layouts.',
+      "Figma design for Yaritu, a luxury wedding outfit rental service.",
+    image: "/projects/yaritu_figma.png",
+    link: "https://www.figma.com/design/...",
+    github: "https://www.figma.com/design/...",
+    technologies: ["UI/UX Design", "Figma"],
+  },
+  {
+    title: "UI/UX Design - Shyara Gold",
+    description:
+      "Figma design for Shyara Gold, a jewelry e-commerce platform.",
+    image: "/projects/shyara_gold_figma.png",
+    link: "https://www.figma.com/design/...",
+    github: "https://www.figma.com/design/...",
+    technologies: ["UI/UX Design", "Figma"],
+  },
+  {
+    title: "UI/UX Design - DocScanX",
+    description:
+      "Figma design for DocScanX, a document scanning application.",
     image: "/projects/docscanx.png",
     link: "https://www.figma.com/design/nLO9RK2WTMH5gae7dKFh1A/Untitled?node-id=0-1&t=tLzv08ikjf1RfFbU-1",
     github: "https://www.figma.com/design/nLO9RK2WTMH5gae7dKFh1A/Untitled?node-id=0-1&t=tLzv08ikjf1RfFbU-1",
@@ -271,7 +361,7 @@ export const FOOTER_DATA = [
       {
         name: "LinkedIn",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com/in/dhruvesh-shyara",
+        link: "https://linkedin.com/in/dhruveshshyara",
       },
       {
         name: "Portfolio",
@@ -316,7 +406,7 @@ export const FOOTER_DATA = [
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:dhruveshshyara@gmail.com",
+        link: "mailto:dhruvesh.shyara.cg@gmail.com",
       },
     ],
   },
@@ -359,35 +449,24 @@ export const LINKS = {
 
 export const RESUMES = [
   {
-    name: "Figma Resume",
+    name: "Dhruvesh Shyara",
     link: "/resumes/Dhruvesh_Shyara_figma_Resume.pdf",
-    image: "/resumes/figma-resume.png",
-    description: "A modern resume designed in Figma with creative layouts.",
+    image: "/resumes/resume.png",
+    description: "Aspiring Full Stack Developer with a passion for creating innovative digital experiences.",
   },
-  {
-    name: "Modern Resume",
-    link: "/resumes/Dhruvesh_Shyara_morden_Resume.pdf",
-    image: "/resumes/modern-resume.png",
-    description: "A contemporary resume with a clean design.",
-  },
-  {
-    name: "Simple Resume",
-    link: "/resumes/Dhruvesh_Shyara_simple_resume.pdf",
-    image: "/resumes/simple-resume.png",
-    description: "A minimalist resume focusing on clarity.",
-  },
+
 ] as const;
 
 export const EDUCATION = [
   {
-    degree: "B.Tech in Computer Science",
-    school: "Ganpat University",
+    degree: "Bachelor of Technology",
+    school: "Rai University",
     period: "2021 — 2025",
     location: "Gujarat, India",
     highlights: [
-      "Pursuing Computer Science degree with focus on web development.",
-      "Active in coding competitions and hackathons.",
-      "Learning modern web technologies and frameworks.",
+      "CGPA: 9.4/10",
+      "HSC: 71% (PP Savani International School, Surat)",
+      "SSC: 96.08pr",
     ],
   },
 ] as const;
@@ -397,36 +476,36 @@ export const CERTIFICATIONS = [
     name: "CSS Basic",
     issuer: "HackerRank",
     year: "2024",
-  link: "https://www.hackerrank.com/certificates/e72e9d42799c",
-  image: "/certificates/css-basic.png",
+    link: "https://www.hackerrank.com/certificates/e72e9d42799c",
+    image: "/certificates/css-basic.png",
   },
   {
-    name: "React Basic",
+    name: "JavaScript (Basic)",
     issuer: "HackerRank",
     year: "2024",
-  link: "https://www.hackerrank.com/certificates/065ed799b22f",
-  image: "/certificates/frontend-developer-react.png",
+    link: "https://www.hackerrank.com/certificates/...",
+    image: "/certificates/javascript-basic.png",
   },
   {
-    name: "Node Basic",
+    name: "Node (Basic)",
     issuer: "HackerRank",
     year: "2024",
-  link: "https://www.hackerrank.com/certificates/ceb3ab163e6d",
-  image: "/certificates/node-basic.png",
-  },
-  {
-    name: "Frontend Developer",
-    issuer: "HackerRank",
-    year: "2024",
-  link: "https://www.hackerrank.com/certificates/cc7dcbd6558a",
-  image: "/certificates/frontend-developer-react.png",
+    link: "https://www.hackerrank.com/certificates/ceb3ab163e6d",
+    image: "/certificates/node-basic.png",
   },
   {
     name: "Problem Solving (Basic)",
     issuer: "HackerRank",
     year: "2024",
-  link: "https://www.hackerrank.com/certificates/0625153f0783",
-  image: "/certificates/problem-solving-basic.png",
+    link: "https://www.hackerrank.com/certificates/0625153f0783",
+    image: "/certificates/problem-solving-basic.png",
+  },
+  {
+    name: "Frontend Developer (React)",
+    issuer: "HackerRank",
+    year: "2024",
+    link: "https://www.hackerrank.com/certificates/cc7dcbd6558a",
+    image: "/certificates/frontend-developer-react.png",
   },
   {
     name: "Azure Services (Basics)",
@@ -453,23 +532,24 @@ export const CERTIFICATIONS = [
 
 export const ACHIEVEMENTS = [
   {
-    title: "Web Development Projects",
-    description: "Successfully built and deployed multiple full-stack web applications including e-commerce platforms and responsive websites.",
+    title: "Freelancing Paid-Project",
+    description: "Successfully delivered multiple paid projects for clients, including Yaritu and Shyara Gold.",
+    year: "2024",
+  },
+  {
+    title: "Open Source Contribution",
+    description: "Contributed to the Tattoo Studio open-source project, implementing a loyalty and rewards system.",
     year: "2024",
   },
   {
     title: "HackerRank Certifications",
-    description: "Earned multiple certifications in CSS, React, Node.js, and Problem Solving from HackerRank.",
-    year: "2024",
-  },
-  {
-    title: "Cloud Certifications",
-    description: "Completed certifications in Azure Services and Amazon DocumentDB from SimpliLearn.",
+    description: "Earned multiple certifications in CSS, JavaScript, Node.js, React, and Problem Solving from HackerRank.",
     year: "2024",
   },
 ] as const;
 
 export const CONTACT = {
-  email: "mailto:dhruveshshyara@gmail.com",
+  email: "mailto:dhruvesh.shyara.cg@gmail.com",
+  phone: "+91-9327595429",
   location: "India",
 } as const;

@@ -13,28 +13,32 @@ export const Resume = () => {
         Resume
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+      <div className="w-full max-w-6xl">
         {RESUMES.map((resume) => (
           <div
             key={resume.name}
-            className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 p-6 rounded-2xl border border-purple-500/30 backdrop-blur-sm flex flex-col items-center text-center"
+            className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 p-4 rounded-2xl border border-purple-500/30 backdrop-blur-sm flex items-center justify-between"
           >
-            <div className="w-full h-64 mb-4 rounded-lg overflow-hidden">
-              <Image
-                src={resume.image}
-                alt={`${resume.name} preview`}
-                width={300}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+            <div className="flex items-center gap-6">
+              <div className="h-auto w-auto rounded-md overflow-hidden border-2 border-purple-500/50">
+                <Image
+                  src={resume.image}
+                  alt={`${resume.name} preview`}
+                  width={105}
+                  height={150}
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white">{resume.name}</h3>
+                <p className="text-gray-400 text-sm">{resume.description}</p>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">{resume.name}</h3>
-            <p className="text-gray-300 mb-4">{resume.description}</p>
             <Link
               href={resume.link}
               target="_blank"
               rel="noreferrer noopener"
-              className="button-primary py-2 px-6 rounded-lg text-white"
+              className="button-primary py-3 px-6 rounded-lg text-white font-semibold"
             >
               View & Download
             </Link>

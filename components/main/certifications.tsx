@@ -16,12 +16,12 @@ export const Certifications = () => {
             className="border border-[#2A0E61] rounded-xl overflow-hidden hover:border-purple-400 transition bg-black/30"
           >
             {c.image && (
-              <div className="w-full h-48 relative">
+              <div className="w-full h-48 relative bg-white">
                 <Image
                   src={c.image}
                   alt={`${c.name} certificate`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             )}

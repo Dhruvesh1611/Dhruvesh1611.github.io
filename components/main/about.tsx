@@ -47,9 +47,9 @@ export const About = () => {
       <div className="max-w-7xl w-full mb-12 flex flex-col lg:flex-row items-center justify-center gap-12 px-4">
 
         {/* About Content Box */}
-        <div className="w-full lg:w-1.3/3">
-          <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 p-8 rounded-2xl border border-purple-500/30 backdrop-blur-sm h-full">
-            <div className="text-gray-300 leading-5 text-lg space-y-6">
+        <div className="w-full lg:w-1/2 flex lg:justify-end">
+          <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 p-8 rounded-2xl border border-purple-500/30 backdrop-blur-sm flex flex-col justify-center max-w-lg">
+            <div className="text-gray-300 leading-relaxed text-lg space-y-6">
               <p>
                 I am a passionate Full Stack Developer currently pursuing my B.Tech in Computer Science at Ganpat University. 
                 I specialize in building modern web applications using React, Node.js, and MongoDB.
@@ -60,7 +60,7 @@ export const About = () => {
                 I have experience with e-commerce platforms, REST APIs, and database management.
               </p>
               <p>
-                I'm actively involved in coding competitions and hackathons, constantly learning new technologies 
+                I&apos;m actively involved in coding competitions and hackathons, constantly learning new technologies 
                 and frameworks to stay updated with the latest web development trends.
               </p>
             </div>
@@ -68,8 +68,8 @@ export const About = () => {
         </div>
 
         {/* Profile Photo - Square and aligned with other boxes */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-          <div className="relative z-40 w-full max-w-md aspect-square rounded-2xl overflow-hidden border-4 border-purple-500/30 shadow-lg">
+        <div className="w-full lg:w-1/2 flex lg:justify-start">
+          <div className="relative z-40 w-full max-w-lg aspect-square rounded-2xl overflow-hidden border-4 border-purple-500/30 shadow-lg">
             <Image
               src="/profilephoto.jpg"
               alt="Dhruvesh Shyara"
